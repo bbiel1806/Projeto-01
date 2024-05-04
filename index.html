@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="pt-BR" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Cursos Desenvolvedor</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/heroes/">
+
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+">
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+
+    
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="heroes.css" rel="stylesheet">
+  </head>
+  <body> 
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="225.000000px" height="225.000000px" viewBox="0 0 225.000000 225.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+            <path d="M965 2209 c-431 -63 -771 -353 -888 -760 -117 -405 -4 -820 304 -1115 134 -128 303 -222 484 -271 90 -24 117 -27 265 -26 146 0 176 3 263 26 107 29 254 94 344 154 76 50 203 171 265 253 69 90 153 265 185 385 24 90 26 117 26 270 0 152 -3 181 -26 268 -29 107 -94 254 -154 344 -49 75 -171 203 -251 264 -222 168 -537 249 -817 208z m405 -44 c69 -15 162 -50 245 -92 239 -121 460 -385 533 -638 37 -124 45 -199 39 -354 -9 -226 -51 -354 -181 -559 -31 -49 -166 -188 -244 -252 -66 -53 -212 -129 -317 -164 -210 -71 -453 -67 -660 10 -38 14 -78 28 -87 31 -10 3 -18 9 -18 13 0 4 -11 11 -25 14 -54 14 -241 156 -309 235 -12 14 -35 41 -52 60 -94 107 -185 301 -219 461 -19 88 -21 310 -4 391 77 378 308 658 662 803 168 69 438 86 637 41z"/>
+            <path d="M683 1543 c-19 -2 -41 -15 -53 -30 -19 -25 -20 -40 -20 -334 l0 -308 24 -28 24 -28 474 -3 c260 -2 488 0 506 3 63 12 64 19 63 372 -2 303 -3 319 -22 338 -19 19 -34 20 -492 21 -259 1 -487 -1 -504 -3z m985 -35 c17 -17 17 -639 0 -656 -17 -17 -999 -17 -1016 0 -17 17 -17 639 0 656 17 17 999 17 1016 0z"/>
+            <path d="M1137 1193 c-43 -97 -76 -182 -73 -190 3 -7 14 -13 24 -13 14 0 37 41 100 181 45 99 82 185 82 190 0 5 -12 9 -28 9 -26 0 -31 -9 -105 -177z"/>
+            <path d="M966 1312 c-29 -33 -86 -117 -86 -127 0 -6 20 -39 45 -73 30 -41 52 -62 65 -62 35 0 34 27 -4 79 -20 27 -36 52 -36 55 0 4 16 28 35 53 38 50 44 77 19 87 -21 8 -19 9 -38 -12z"/>
+            <path d="M1323 1323 c-22 -8 -14 -39 24 -88 25 -33 33 -52 27 -61 -5 -7 -22 -31 -38 -53 -30 -43 -29 -71 3 -71 19 0 111 112 111 135 0 15 -98 145 -108 144 -4 0 -13 -3 -19 -6z"/>
+            <path d="M993 755 c-28 -27 -50 -37 -112 -50 -112 -24 -140 -34 -151 -55 -16 -29 -12 -65 9 -84 17 -15 56 -17 417 -17 l399 0 23 26 c45 53 7 96 -106 120 -111 24 -110 23 -147 61 l-34 34 -131 0 -131 0 -36 -35z m317 -25 c5 -22 17 -27 128 -53 133 -31 154 -46 126 -85 -15 -22 -17 -22 -408 -22 -415 0 -416 0 -416 47 0 29 12 33 154 64 63 13 110 28 112 36 14 46 6 44 156 41 142 -3 142 -3 148 -28z"/>
+            </g>
+            </svg>
+
+        </a>
+      </div>
+    </nav>
+    
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    
+<main>
+  <h1 class="visually-hidden">DEV ACADEMY</h1>
+
+  <div class="b-example-divider"></div>
+
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold text-body-emphasis">Seja um Desenvolvedor Front-End</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">De forma geral, o Front-end compreende a parte visual de sites e aplicações. Ou seja, a área das páginas em que as pessoas podem interagir.
+
+        Isso significa que o Front-end se relaciona com as partes dos sites que mais se aproximam da pessoa usuária.
+        
+        Sendo assim, as pessoas que trabalham com Front-end são responsáveis por desenvolver uma interface gráfica através de tecnologias bases da Web: HTML, CSS e JavaScript.</p>
+      
+    </div>
+    <div class="overflow-hidden" style="max-height: 30vh;">
+      <div class="container px-5">
+        <img src="/frontend.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="360" height="200" loading="lazy">
+      </div>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">QUERO SER FRONT-END</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="b-example-divider"></div>
+
+  <div class="container col-xxl-15 px-5 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPNnW1aptCGTyiMW2O8hQ1swFuGTP_0UWggyoeMFgowA&s" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="380" height="300" loading="lazy">
+      </div>
+      <div class="col-lg-7">
+        <h1 class="display-4 fw-bold text-body-emphasis lh-1 mb-3">Módulo HTML 5</h1>
+        <p class="lead"> o HTML5 fornece ferramentas para o CSS e o Javascript fazerem seu trabalho da melhor possível de forma que um web site ou aplicação continue leve e funcional.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Sobre</button>
+        </div>
+      </div>
+
+      <div class="container col-xxl-15 px-5 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/120px-CSS3_logo_and_wordmark.svg.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="290" height="100" loading="lazy">
+          </div>
+          <div class="col-lg-4">
+            <h1 class="display-4 fw-bold text-body-emphasis lh-1 mb-3">Módulo HTML 5</h1>
+            <p class="lead">é um mecanismo para adicionar estilos (cores, fontes, espaçamento, etc.) a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Sobre</button>
+            </div>
+          </div>
+
+          <div class="container col-xxl-15 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="290" height="100" loading="lazy">
+              </div>
+              <div class="col-lg-7">
+                <h1 class="display-4 fw-bold text-body-emphasis lh-1 mb-3">Módulo JavaScript</h1>
+                <p class="lead">JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Sobre</button>
+                </div>
+              </div>
+    </div>
+  </div>
+
+  <div class="b-example-divider"></div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="/avatar 1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Gustavo Moisés, Joinvile-SC</h5>
+          <p class="card-text">Ótimos professores com excelente didática. Embora já tenha um certo conhecimento em HTML sempre há possibilidade de ir mais além dos conhecimentos e isso o projeto me propos. Parabéns aos envolvidos!.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Última atualização há 3 dias</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="/avatar 2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Miguel Jose, Blumenau-SC</h5>
+          <p class="card-text">Excelente projeto com a finalidade de aplicação do JavaScript, todos os tópicos foram muito bem abordados!</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Última atualização há 8 dias</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="/AVATAR 3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bernado Campos, Palhoça-SC</h5>
+          <p class="card-text">Enfim, um curso que esclarece e instiga o uso do CSS para desenvolvedores, de maneira objetiva e precisa. Foi uma ótima experiência. Parabéns.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Última atualização há 12 dias</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="b-example-divider"></div>
+
+  <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Crie uma Conta em nossa Plataforma</h1>
+        <p class="col-lg-10 fs-4">Profissão que mais contrata no mundo torne-se um Desenvolvedor</p>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+        <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Senha</label>
+          </div>
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Lembrar Login
+            </label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Criar Conta</button>
+          <hr class="my-4">
+          <small class="text-body-secondary">Ao clicar em Criar Conta, você concorda com os termos de uso.</small>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <section id="preco">
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm border-primary">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Back-End</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">R$97<small class="text-body-primary fw-light">/mês</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>+ de 1.000 Alunos inscritos</li>
+            <li>20 GB de Contéudo(cada vez mais coteúdo adicionado a plataforma)</li>
+            <li>Suporte via E-mail ou Whatsapp</li>
+            <li>Tire suas Dúvidas direto com professores</li>
+
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-outline-primary">Comprar Agora</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4 rounded-3 shadow-sm text-align">
+      <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Front-End</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">R$97<small class="text-body-secondary fw-light">/mês</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>+ de 1.000 Alunos inscritos</li>
+              <li>20 GB de Contéudo(cada vez mais coteúdo adicionado a plataforma)</li>
+              <li>Suporte via E-mail ou Whatsapp</li>
+              <li>Tire suas Dúvidas direto com professores</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Comprar Agora</button>
+          </div>
+        </div>
+      </div>
+  </section>
+</main>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
